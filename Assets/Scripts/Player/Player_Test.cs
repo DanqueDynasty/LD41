@@ -59,23 +59,32 @@ public class Player_Test : MonoBehaviour {
             var movementZ = Input.GetAxis("Vertical");
             var aimY = Input.GetAxis("Joystick1Horizontal");    //Augments the forward direction
 
-            var movementVector = new Vector3(movementZ * forward.x, 0.0f, movementX * forward.z);
-            Debug.Log(movementVector);
+            var movementVector = new Vector3(movementZ * forward.x, 0.0f, movementZ * forward.z);
 
-            m_rigidBody.AddForce(movementVector, ForceMode.Impulse);
+            Debug.Log("Aim: " + aimY);
+
+            if (movementX == 0.0f)
+            {
+                m_rigidBody.velocity = new Vector3(0.0f, 0.0f, 0.0f);
+            }
+            else
+            {
+                m_rigidBody.AddForce(movementVector, ForceMode.Impulse);
+            }
+
+
             if (m_rigidBody.angularVelocity.y < MAX_TURN)
             {
                 m_rigidBody.AddTorque(new Vector3(0.0f, m_turnSpeed * aimY, 0.0f), ForceMode.Impulse);
             }
 
             if (Input.GetButtonDown("Fire1")) {
-                Debug.Log("Firing");
                 StartCoroutine(FireBullet());
             }
         }
         else
         {
-
+            //TODO Implement Keyboard control.
         }
 
 	}
