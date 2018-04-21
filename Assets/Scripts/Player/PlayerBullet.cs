@@ -9,7 +9,7 @@ public class PlayerBullet : MonoBehaviour {
     [SerializeField]
     private int damage;
 
-    private float m_speed = 40.0f;
+    private float m_speed = 100.0f;
 
     private Rigidbody m_rigidBody;
 
@@ -29,9 +29,12 @@ public class PlayerBullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        m_rigidBody.AddForce(m_initialDirection, ForceMode.Acceleration);
+        m_rigidBody.AddForce(m_initialDirection);
 	}
 
+    /// <summary>
+    /// Called when [became invisible].
+    /// </summary>
     private void OnBecameInvisible()
     {
         Destroy(this);
