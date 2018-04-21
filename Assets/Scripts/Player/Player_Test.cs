@@ -97,7 +97,7 @@ public class Player_Test : MonoBehaviour {
                 hasJumped = true;
             }
 
-            if (Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 StartCoroutine(FireBullet());
             }

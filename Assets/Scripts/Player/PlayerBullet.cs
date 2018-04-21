@@ -9,9 +9,11 @@ public class PlayerBullet : MonoBehaviour {
     [SerializeField]
     private int damage;
 
-    private float m_speed = 100.0f;
+    private float m_speed = 50.0f;
 
     private Rigidbody m_rigidBody;
+
+    private bool hasFired = false;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +31,11 @@ public class PlayerBullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        m_rigidBody.AddForce(m_initialDirection);
+        if (!hasFired)
+        {
+            m_rigidBody.AddForce(m_initialDirection, ForceMode.Impulse);
+            hasFired = true;
+        }
 	}
 
     /// <summary>
