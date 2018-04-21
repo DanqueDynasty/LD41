@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
     [SerializeField]
-    private Player_Test m_Player;
+    private PlayerController m_Player;
 
     [SerializeField]
     private float m_rotationFactor;
@@ -20,15 +20,6 @@ public class CameraController : MonoBehaviour {
 
         var cameraYaw = Input.GetAxis("Joystick1Vertical");
         var oldRotEuler = transform.rotation.eulerAngles;
-
-        if (cameraYaw != 0.0f)
-        {
-
-        }
-        else {
-            oldRotEuler.y = 0.0f;
-            transform.rotation = Quaternion.Euler(oldRotEuler);
-        }
 
         transform.position = m_Player.transform.position;
         var playerRot = m_Player.transform.rotation;

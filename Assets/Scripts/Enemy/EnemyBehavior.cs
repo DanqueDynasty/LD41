@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyBehavior : MonoBehaviour {
     public enum EnemyAIMode : uint
@@ -45,14 +46,16 @@ public class EnemyBehavior : MonoBehaviour {
         if (!isIncited && m_actionComplete)
         {
             int chance = (int)(Random.Range(0.0f, 1.0f) * 10.0f);
-            if (chance % 3 == 0)
+            if (chance % 5 == 0)
             {
                 m_enemyAIMode = EnemyAIMode.ROAM;
-                //TODO Switch this with some valid point on navmesh. 
-                float x, y, z;
-                x = Random.Range(-5f, 5f);
-                z = Random.Range(-5f, 5f);
-                m_desiredPosition = new Vector3(x, 0.0f, z);
+                Vector3 randomDirection = Random.insideUnitSphere * 5.0f; 
+                randomDirection += transform.position;
+
+                NavMeshHit hit;
+                NavMesh.SamplePosition(randomDirection, out hit, 3.0f, 1);
+                m_desiredPosition = hit.position;
+
                 m_actionComplete = false;
             }
             else
@@ -64,23 +67,23 @@ public class EnemyBehavior : MonoBehaviour {
         }
         if (!m_actionComplete)
         {
+            Vector3 direction = Vector3.zero;
             switch (m_enemyAIMode)
             {
                 case EnemyAIMode.ROAM:
-                    //TODO Implement this.
-                    if ((transform.position - m_desiredPosition).magnitude < 0.001f)
+                    
+                    if (Vector3.Distance(transform.position, m_desiredPosition) < 0.001f)
                     {
                         m_actionComplete = true;
                     }
                     else
                     {
-                        Debug.Log("Should be moving to new point");
-                        var direction = transform.position - m_desiredPosition;
-                        m_rigidBody.AddForce(direction * 0.05f, ForceMode.Impulse);
+                        direction = (transform.position - m_desiredPosition);
+                        direction.Normalize();
+                        m_rigidBody.velocity = direction * 0.5f;
                     }
                     break;
                 case EnemyAIMode.GUARD:
-                    //TODO Implement this
                     if ((Mathf.Abs(transform.rotation.eulerAngles.y) - Mathf.Abs(m_desiredRotation)) < 0.001f)
                     {
                         m_actionComplete = true;

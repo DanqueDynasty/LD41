@@ -9,7 +9,7 @@ public class PlayerBullet : MonoBehaviour {
     [SerializeField]
     private int damage;
 
-    private float m_speed = 50.0f;
+    private float m_speed = 100.0f;
 
     private Rigidbody m_rigidBody;
 

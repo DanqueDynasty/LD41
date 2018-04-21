@@ -6,6 +6,11 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance = null;
 
+    [SerializeField]
+    private PlayerController m_player;
+
+    public PlayerController Player { get { return m_player; } }
+
     public enum GameState : uint
     {
         START,
