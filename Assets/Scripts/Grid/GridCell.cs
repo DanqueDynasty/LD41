@@ -21,6 +21,10 @@ public class GridCell : MonoBehaviour {
     [SerializeField]
     private bool isSearched = false;
 
+    [SerializeField]
+    private bool isValid = true;
+
+
     private int m_depth = 5;
 
 	// Use this for initialization
@@ -29,6 +33,21 @@ public class GridCell : MonoBehaviour {
         GetComponent<Renderer>().sharedMaterial = instanceMaterial;
 	}
 
+
+    /// <summary>
+    /// Sets the select.
+    /// </summary>
+    /// <param name="level">The level.</param>
+    public void SetSelect(int level)
+    {
+        isSearched = true;
+        SearchNorth(level);
+        SearchSouth(level);
+    }
+
+    /// <summary>
+    /// Resets the cell.
+    /// </summary>
     public void ResetCell()
     {
         isSearched = false;
@@ -39,16 +58,25 @@ public class GridCell : MonoBehaviour {
 	void Update () {
         if (isSearched)
         {
-            GetComponent<Renderer>().sharedMaterial.color = new Color(1, 1, 0);
+            GetComponent<Renderer>().sharedMaterial.color = new Color(0.2f, 1, 0.6f);
         }
-        else {
+        else if (!isValid)
+        {
+            GetComponent<Renderer>().sharedMaterial.color = new Color(1.0f, 0.0f, 0.0f);
+        }
+        else
+        {
             GetComponent<Renderer>().sharedMaterial.color = new Color(0.78f, 0.78f, 0.78f);
         }
 	}
 
+    /// <summary>
+    /// Searches the North Node if it is valid
+    /// </summary>
+    /// <param name="levels">The levels.</param>
     public void SearchNorth(int levels)
     {
-        if (levels > 0)
+        if (levels > 0 && isValid)
         {
             int nextLevel = levels - 1;
             isSearched = true;
@@ -61,9 +89,13 @@ public class GridCell : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Searches the south.
+    /// </summary>
+    /// <param name="levels">The levels.</param>
     public void SearchSouth(int levels)
     {
-        if (levels > 0) {
+        if (levels > 0 && isValid) {
             var nextLevel = levels - 1;
             isSearched = true;
 
@@ -77,9 +109,13 @@ public class GridCell : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Searches the east.
+    /// </summary>
+    /// <param name="levels">The levels.</param>
     public void SearchEast(int levels)
     {
-        if (levels >= 0)
+        if (levels >= 0 && isValid)
         {
             isSearched = true;
             if (East != null)
@@ -89,8 +125,12 @@ public class GridCell : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Searches the west.
+    /// </summary>
+    /// <param name="levels">The levels.</param>
     public void SearchWest(int levels) {
-        if (levels >= 0)
+        if (levels >= 0 && isValid)
         {
             isSearched = true;
             if (West != null)

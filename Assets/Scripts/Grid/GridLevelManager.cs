@@ -7,6 +7,14 @@ public class GridLevelManager : MonoBehaviour {
     [SerializeField]
     GameObject LevelContainer;
 
+    public enum TurnMode : uint {
+        PLAYER_TURN,
+        ENEMY_TURN
+    }
+
+    [SerializeField]
+    private TurnMode m_turnmode;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,7 +34,7 @@ public class GridLevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0)) {
+        //if (Input.GetMouseButtonDown(0)) {
             RaycastHit hitInfo = new RaycastHit();
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
             if (hit)
@@ -43,6 +51,6 @@ public class GridLevelManager : MonoBehaviour {
                     Debug.Log("ERROR");
                 }
             }
-        }
+        //}
 	}
 }
