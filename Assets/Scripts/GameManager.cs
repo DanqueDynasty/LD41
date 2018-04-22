@@ -6,10 +6,29 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager Instance = null;
 
+    //Which Control Scheme
+    public enum ControlMode : byte {
+        WASD,
+        GAMEPAD
+    }
+
+    public enum Turn : byte {
+        HOST,
+        GUEST
+    }
+
     [SerializeField]
     private PlayerController m_player;
 
+    [SerializeField]
+    private ControlMode m_controlMode;
+
+    [SerializeField]
+    private Turn m_currentTurn = Turn.HOST;
+
     public PlayerController Player { get { return m_player; } }
+    public ControlMode InputMode { get { return m_controlMode; } }
+    public Turn CurrentTurn { get { return m_currentTurn; } }
 
     public enum GameState : uint
     {
@@ -30,6 +49,7 @@ public class GameManager : MonoBehaviour {
         {
             Debug.Log("Assigned Game Manager");
             m_state = GameState.START;
+            m_controlMode = ControlMode.GAMEPAD;
             Instance = this;
         }
     }

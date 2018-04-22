@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class GridLevelManager : MonoBehaviour {
 
+    public static GridLevelManager Instance = null;
+
     [SerializeField]
     GameObject LevelContainer;
 
-    public enum TurnMode : uint {
-        PLAYER_TURN,
-        ENEMY_TURN
+    private void Awake()
+    {
+        if (Instance == null) {
+            Instance = this;
+        }
     }
 
-    [SerializeField]
-    private TurnMode m_turnmode;
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 
     /// <summary>
     /// Resets the scene.
     /// </summary>
-    void ResetScene()
+    public void ResetScene()
     {
         var gridCells = LevelContainer.GetComponentsInChildren<GridCell>();
         foreach (var grid in gridCells)

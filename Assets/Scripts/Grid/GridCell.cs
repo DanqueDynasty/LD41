@@ -24,13 +24,26 @@ public class GridCell : MonoBehaviour {
     [SerializeField]
     private bool isValid = true;
 
-
     private int m_depth = 5;
+    private int m_searchDepth;
+
+    public GridCell NorthCell { get { return ( North ) ? North.GetComponent<GridCell>() : null; } }
+    public GridCell SouthCell { get { return ( South ) ? South.GetComponent<GridCell>() : null; } }
+    public GridCell EastCell { get { return ( East ) ? East.GetComponent<GridCell>() : null; } }
+    public GridCell WestCell { get { return ( West) ? West.GetComponent<GridCell>() : null; } }
+
+    public int SearchDepth { get { return m_searchDepth; } }
+
+    public bool IsValid { get { return isValid; } }
+    public bool Searched { get { return isSearched; } }
+
+
 
 	// Use this for initialization
 	void Start () {
         var instanceMaterial = Instantiate(GetComponent<Renderer>().sharedMaterial) as Material;
         GetComponent<Renderer>().sharedMaterial = instanceMaterial;
+        m_searchDepth = 0;
 	}
 
 
@@ -71,6 +84,26 @@ public class GridCell : MonoBehaviour {
 	}
 
     /// <summary>
+    /// Searches the specified depth level.
+    /// </summary>
+    /// <param name="depthLevel">The depth level.</param>
+    public void Search(int depthLevel) {
+        if (depthLevel > 0 && isValid)
+        {
+            isSearched = true;
+
+            if (North != null) {
+                SearchNorth(depthLevel);
+            }
+
+            if (South != null)
+            {
+                SearchSouth(depthLevel);
+            }
+        }
+    }
+
+    /// <summary>
     /// Searches the North Node if it is valid
     /// </summary>
     /// <param name="levels">The levels.</param>
@@ -78,6 +111,7 @@ public class GridCell : MonoBehaviour {
     {
         if (levels > 0 && isValid)
         {
+            m_searchDepth = levels;
             int nextLevel = levels - 1;
             isSearched = true;
 
@@ -96,6 +130,7 @@ public class GridCell : MonoBehaviour {
     public void SearchSouth(int levels)
     {
         if (levels > 0 && isValid) {
+            m_searchDepth = levels;
             var nextLevel = levels - 1;
             isSearched = true;
 
@@ -117,6 +152,7 @@ public class GridCell : MonoBehaviour {
     {
         if (levels >= 0 && isValid)
         {
+            m_searchDepth = levels;
             isSearched = true;
             if (East != null)
             {
@@ -132,11 +168,21 @@ public class GridCell : MonoBehaviour {
     public void SearchWest(int levels) {
         if (levels >= 0 && isValid)
         {
+            m_searchDepth = levels;
             isSearched = true;
             if (West != null)
             {
                 West.GetComponent<GridCell>().SearchWest(--levels);
             }
         }
+    }
+
+    /// <summary>
+    /// Gets the center position.
+    /// </summary>
+    /// <returns></returns>
+    public Vector3 GetCenterPosition() {
+        var top = transform.GetComponent<BoxCollider>().bounds.max.y;
+        return transform.position = new Vector3( transform.position.x, 0, transform.position.z ) + new Vector3(0, top, 0);
     }
 }
