@@ -25,7 +25,9 @@ public class GridCell : MonoBehaviour {
     private bool isValid = true;
 
     [SerializeField]
-    private GameObject[] powerupOptions;
+    private GameObject powerupPrefab;
+
+    private GameObject m_powerUp;
 
     private int m_depth = 5;
     private int m_searchDepth;
@@ -40,14 +42,18 @@ public class GridCell : MonoBehaviour {
     public bool IsValid { get { return isValid; } }
     public bool Searched { get { return isSearched; } }
 
-
+    public StepsPowerup PowerUp { get { return (m_powerUp) ? m_powerUp.GetComponent<StepsPowerup>() :  null; } }
 
 	// Use this for initialization
 	void Start () {
         var instanceMaterial = Instantiate(GetComponent<Renderer>().sharedMaterial) as Material;
         GetComponent<Renderer>().sharedMaterial = instanceMaterial;
         m_searchDepth = 0;
-	}
+        m_powerUp = Instantiate(powerupPrefab);
+        m_powerUp.transform.position = transform.position;
+        m_powerUp.transform.parent = transform;
+
+    }
 
 
     /// <summary>

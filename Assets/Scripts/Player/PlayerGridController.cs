@@ -32,6 +32,7 @@ public class PlayerGridController : MonoBehaviour {
     bool m_verticalMoveInvoked = false;
 
     bool m_dpadPressed = false;
+    bool m_dVPadPressed = false;
 
     [SerializeField]
     private GameObject m_cursor;
@@ -82,7 +83,8 @@ public class PlayerGridController : MonoBehaviour {
                     var dPadVertical = Input.GetAxis("DPadVertical");
 
                     #region Navigation
-                    //Handle Horizontal Traversal
+
+                    #region ModeSelect
                     if (!m_actionSelected)
                     {
                         if (dPadHorizontal == -1 && !m_dpadPressed)
@@ -101,13 +103,34 @@ public class PlayerGridController : MonoBehaviour {
                                 m_dpadPressed = true;
                             }
                         }
-                        else
+                        else if(dPadHorizontal == 0)
                         {
                             m_dpadPressed = false;
                         }
+
+                        switch (m_actionIndex)
+                        {
+                            case 0:
+                                m_action = Action.STALL;
+                                break;
+                            case 1:
+                                m_action = Action.MOVE;
+                                break;
+                            case 2:
+                                m_action = Action.ATTACK;
+                                break;
+                        }
+
+                        if (Input.GetButtonDown("Fire1"))
+                        {
+                            m_actionSelected = true;
+                            Debug.Log("Selected: " + m_action);
+                        }
                     }
+                    #endregion
                     else
                     {
+                        Debug.Log("Polling Next Move");
                         if (m_action == Action.MOVE)
                         {
                             if (horizontalAxis <= -0.8f)
@@ -161,29 +184,66 @@ public class PlayerGridController : MonoBehaviour {
                         else if (m_action == Action.ATTACK)
                         {
                             //Do Dpad Processing.
+                            if (dPadHorizontal == -1 && !m_dpadPressed)
+                            {
+                                m_attackDirection = -Vector3.left;
+                                m_dpadPressed = true;
+                            }
+                            else if (dPadHorizontal == 1 && m_dpadPressed)
+                            {
+                                m_attackDirection = Vector3.left;
+                                m_dpadPressed = true;
+                            }
+                            else if (horizontalAxis == 0)
+                            {
+                                m_dpadPressed = false;
+                            }
 
+
+                            if (dPadVertical == -1)
+                            {
+                                m_attackDirection = -Vector3.forward;
+                                m_dVPadPressed = true;
+                            }
+                            else if (dPadVertical == 1)
+                            {
+                                m_attackDirection = Vector3.forward;
+                                m_dVPadPressed = true;
+                            }
+                            else if (dPadVertical == 0) {
+                                m_dVPadPressed = false;
+                            }
+                        }
+
+                        if (Input.GetButtonDown("Fire1"))
+                        {
+                            Debug.Log("Confirming Action");
+                            if (m_action == Action.MOVE)
+                            {
+                                if (m_gridCell != m_tempGridCell)
+                                {
+                                    m_optionSelected = true;
+                                }
+                            }
+                            else
+                            {
+                                m_optionSelected = true;
+                            }
+                        }
+
+                        if (Input.GetButtonDown("Back"))
+                        {
+                            m_actionSelected = false;
                         }
                     }
                     #endregion
 
-                    Debug.Log("m_action: " + m_actionIndex);
-
-                    if (Input.GetButtonDown("Fire1"))
-                    {
-                        if (m_gridCell != m_tempGridCell)
-                        {
-                            m_optionSelected = true;
-                        }
-                    }
-
-                    if (Input.GetButtonDown("Back"))
-                    {
-                        m_actionSelected = false;
-                    }
                 }
                 else
                 {
                     //TODO Handle Keyboard Input Logic
+
+
 
                 }
             }
@@ -194,20 +254,36 @@ public class PlayerGridController : MonoBehaviour {
                     case Action.MOVE:
                         m_gridCell = m_tempGridCell;
                         m_depthAvailability = (int)Mathf.Abs(m_searchDepth - m_depthAvailability);
+                        if (m_gridCell.PowerUp.PowerupType == StepsPowerup.Type.STEPS)
+                        {
+                            m_depthAvailability += m_gridCell.PowerUp.Value;
+                        }
+                        else {
+                            m_ammoCount += m_gridCell.PowerUp.Value;
+                        }
                         GridLevelManager.Instance.ResetScene();
                         transform.position = new Vector3(m_gridCell.transform.position.x, transform.position.y, m_gridCell.transform.position.z);
                         break;
                     case Action.ATTACK:
-                        //TODO Instantiate bullet at that direction
-
+                        StartCoroutine(Shoot());
                         break;
                     case Action.STALL:
-
+                        Debug.Log("Staying");
                         break;
                 }
                 GameManager.Instance.NextTurn();    //Let the Game Manager know Guest' turn.
                 m_optionSelected = false;
+                m_actionSelected = false;
             }
         }
 	}
+
+    IEnumerator Shoot()
+    {
+        var bullet = Instantiate(m_bullet).GetComponent<PlayerBullet>();
+        bullet.transform.position = transform.position;
+        bullet.InitialData(m_attackDirection);
+        Physics.IgnoreCollision(transform.GetComponent<Collider>(), bullet.GetComponent<Collider>());
+        yield return new WaitForSeconds(0.0f);
+    }
 }

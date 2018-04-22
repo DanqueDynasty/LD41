@@ -272,6 +272,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &88383585
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -375,6 +377,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &125734202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -478,6 +482,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &210416754
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -581,6 +587,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &226951579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -684,6 +692,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &231060741
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -787,6 +797,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &248820153
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -890,6 +902,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &271645860
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -993,6 +1007,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &281760019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1096,6 +1112,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &297098341
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1284,6 +1302,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &326378640
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1387,6 +1407,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &368971705
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1490,6 +1512,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &379396248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1593,6 +1617,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &381026838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1696,6 +1722,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &384421371
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1799,6 +1827,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &391379158
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1902,6 +1932,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &393008675
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2005,6 +2037,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &437623869
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2108,6 +2142,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &471616705
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2211,6 +2247,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &507560485
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2314,6 +2352,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &523663891
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2417,6 +2457,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &546387840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2520,6 +2562,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &553564488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2623,6 +2667,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &566398670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2726,6 +2772,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &575784711
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2829,6 +2877,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &584228503
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2932,6 +2982,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &596382741
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3035,6 +3087,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &600181234
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3131,6 +3185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slerpFactor: 0.4
   currentIndex: 0
+  CurrentForward: {x: 0, y: 0, z: 1}
+  CurrentRight: {x: 1, y: 0, z: 0}
 --- !u!1 &612092278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3237,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &612092281
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3284,6 +3342,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &617880139
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3387,6 +3447,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &643964744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3490,6 +3552,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &659790430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3593,6 +3657,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &686712912
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3721,7 +3787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 690869888}
   m_LocalRotation: {x: 0.1601647, y: -0.33132535, z: 0.057179976, w: 0.92806315}
-  m_LocalPosition: {x: 7.1, y: 5.3, z: -9.6}
+  m_LocalPosition: {x: 7.1, y: 4.06, z: -9.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 600994364}
@@ -3777,6 +3843,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &756915815
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3880,6 +3948,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &797186838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3983,6 +4053,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &859438663
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4086,6 +4158,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &899951251
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4189,6 +4263,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &909478263
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4292,6 +4368,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &937255612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4395,6 +4473,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &953870182
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4498,6 +4578,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &992402865
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4601,6 +4683,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1004433030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4704,6 +4788,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1023857580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4807,6 +4893,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1145874580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4910,6 +4998,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1154806063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5013,6 +5103,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1172100919
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5181,6 +5273,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1216875243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5284,6 +5378,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1224457077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5387,6 +5483,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1227436236
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5535,6 +5633,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1298830712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5638,6 +5738,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1334198546
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5741,6 +5843,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1341174729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5844,6 +5948,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1421418833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5947,6 +6053,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1429503816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6050,6 +6158,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1434356309
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6153,6 +6263,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1461732378
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6256,6 +6368,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1485849342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6359,6 +6473,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1527886612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6462,6 +6578,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1533736012
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6565,6 +6683,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1563001174
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6668,6 +6788,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1631482808
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6771,6 +6893,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1655605112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6874,6 +6998,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1677122968
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6977,6 +7103,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1677352483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7080,6 +7208,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1685348095
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7183,6 +7313,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1698139875
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7273,6 +7405,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1712988537
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7442,6 +7576,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!1 &1734158421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7492,6 +7628,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1734158424
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7595,6 +7733,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1752045050
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7698,6 +7838,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1755080870
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7801,6 +7943,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1778455906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7895,7 +8039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelContainer: {fileID: 84961694}
-  m_turnmode: 0
 --- !u!1 &1784563913
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,6 +8076,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1784563915
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8049,6 +8194,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1807320209
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8152,6 +8299,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1862528954
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8255,6 +8404,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1982691518
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8358,6 +8509,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &1988719226
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8461,6 +8614,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &2003870779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8545,10 +8700,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 100
+  m_searchDepth: 0
   m_depthAvailability: 0
   m_gridCell: {fileID: 2003870778}
   m_optionSelected: 0
+  m_moveInvoked: 0
   m_cursor: {fileID: 311762689}
+  m_actionSelected: 0
+  m_actionIndex: 0
+  m_bullet: {fileID: 1023189049545124, guid: e2685446b80d8b243ad69ca5950559e2, type: 2}
 --- !u!23 &2075144249
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8666,6 +8826,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &2077169941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8769,6 +8931,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 0
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &2116017469
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8872,6 +9036,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &2117195172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8975,6 +9141,8 @@ MonoBehaviour:
   isSelected: 0
   isSearched: 0
   isValid: 1
+  powerupPrefab: {fileID: 1441953578614292, guid: b5c38ab49653e96478411d67df42727c,
+    type: 2}
 --- !u!23 &2136816762
 MeshRenderer:
   m_ObjectHideFlags: 0
