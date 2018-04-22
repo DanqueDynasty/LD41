@@ -37,6 +37,21 @@ public class GameManager : MonoBehaviour {
         PAUSE
     }
 
+    /// <summary>
+    /// Nexts the turn.
+    /// </summary>
+    public void NextTurn()
+    {
+        if (m_currentTurn == Turn.HOST)
+        {
+            m_currentTurn = Turn.GUEST;
+        }
+        else
+        {
+            m_currentTurn = Turn.HOST;
+        }
+    }
+
     [SerializeField]
     private GameState m_state;
 

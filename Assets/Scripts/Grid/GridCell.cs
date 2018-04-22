@@ -24,6 +24,9 @@ public class GridCell : MonoBehaviour {
     [SerializeField]
     private bool isValid = true;
 
+    [SerializeField]
+    private GameObject[] powerupOptions;
+
     private int m_depth = 5;
     private int m_searchDepth;
 

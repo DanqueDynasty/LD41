@@ -13,10 +13,27 @@ public class CameraGridController : MonoBehaviour {
         new Vector3(0f, 270f, 0f)
     };
 
+    private Vector3[] m_Forwards = {
+        Vector3.forward,
+        Vector3.right,
+        -Vector3.forward,
+        -Vector3.right
+    };
+
+    private Vector3[] right = {
+        Vector3.right,
+        Vector3.right,
+        Vector3.right,
+        Vector3.right
+    };
+
     [SerializeField]
     private int currentIndex = 0;
 
     private bool isRotating = false;
+
+    public Vector3 CurrentForward = Vector3.forward;
+    public Vector3 CurrentRight = Vector3.right;
 
 	// Use this for initialization
 	void Start () {
