@@ -7,7 +7,10 @@ public class EnemyGridAI : MonoBehaviour {
     [SerializeField]
     private int m_ammoCount;
 
+    [SerializeField]
+    private GridCell m_currentGrid;
 
+    [SerializeField]
     private GameObject m_enemyBulletPrefab;
 
 	// Use this for initialization
@@ -20,6 +23,7 @@ public class EnemyGridAI : MonoBehaviour {
         if (GameManager.Instance.CurrentTurn == GameManager.Turn.GUEST)
         {
             //Run Guest Behavior
+
         }
 	}
 }

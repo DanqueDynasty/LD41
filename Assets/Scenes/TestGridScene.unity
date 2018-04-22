@@ -8960,6 +8960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 2075144248}
+  m_turnText: {fileID: 895690172}
   m_Type: {fileID: 1122464439}
 --- !u!1 &1982691515
 GameObject:

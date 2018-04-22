@@ -132,7 +132,6 @@ public class PlayerGridController : MonoBehaviour {
                     #endregion
                     else
                     {
-                        Debug.Log("Polling Next Move");
                         if (m_action == Action.MOVE)
                         {
                             if (horizontalAxis <= -0.8f)
@@ -185,17 +184,17 @@ public class PlayerGridController : MonoBehaviour {
                         }
                         else if (m_action == Action.ATTACK)
                         {
-                            //Do Dpad Processing.
+                            //Do DPad Processing.
                             if (dPadHorizontal == -1 && !m_dpadPressed)
                             {
                                 Debug.Log("West Aim");
-                                m_attackDirection = -Vector3.left;
+                                m_attackDirection = Vector3.left;
                                 m_dpadPressed = true;
                             }
-                            else if (dPadHorizontal == 1 && m_dpadPressed)
+                            else if (dPadHorizontal == 1 && !m_dpadPressed)
                             {
                                 Debug.Log("East Aim");
-                                m_attackDirection = Vector3.left;
+                                m_attackDirection = -Vector3.left;
                                 m_dpadPressed = true;
                             }
                             else if (horizontalAxis == 0)
@@ -204,13 +203,13 @@ public class PlayerGridController : MonoBehaviour {
                             }
 
 
-                            if (dPadVertical == -1)
+                            if (dPadVertical == -1 && !m_dpadPressed)
                             {
                                 Debug.Log("South Aim");
                                 m_attackDirection = -Vector3.forward;
                                 m_dVPadPressed = true;
                             }
-                            else if (dPadVertical == 1)
+                            else if (dPadVertical == 1 && !m_dpadPressed)
                             {
                                 m_attackDirection = Vector3.forward;
                                 m_dVPadPressed = true;
