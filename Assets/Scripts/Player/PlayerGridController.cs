@@ -53,6 +53,8 @@ public class PlayerGridController : MonoBehaviour {
 
     private const int MAX_STEPS = 3;
 
+    public Action CurrentAction { get { return m_action; } }
+
 	// Use this for initialization
 	void Start () {
         m_searchDepth = m_depthAvailability = MAX_STEPS;
@@ -186,11 +188,13 @@ public class PlayerGridController : MonoBehaviour {
                             //Do Dpad Processing.
                             if (dPadHorizontal == -1 && !m_dpadPressed)
                             {
+                                Debug.Log("West Aim");
                                 m_attackDirection = -Vector3.left;
                                 m_dpadPressed = true;
                             }
                             else if (dPadHorizontal == 1 && m_dpadPressed)
                             {
+                                Debug.Log("East Aim");
                                 m_attackDirection = Vector3.left;
                                 m_dpadPressed = true;
                             }
@@ -202,6 +206,7 @@ public class PlayerGridController : MonoBehaviour {
 
                             if (dPadVertical == -1)
                             {
+                                Debug.Log("South Aim");
                                 m_attackDirection = -Vector3.forward;
                                 m_dVPadPressed = true;
                             }
@@ -217,7 +222,7 @@ public class PlayerGridController : MonoBehaviour {
 
                         if (Input.GetButtonDown("Fire1"))
                         {
-                            Debug.Log("Confirming Action");
+                            Debug.Log("Confirming the action");
                             if (m_action == Action.MOVE)
                             {
                                 if (m_gridCell != m_tempGridCell)
